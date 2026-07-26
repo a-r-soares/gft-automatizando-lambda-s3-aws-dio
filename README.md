@@ -267,6 +267,9 @@ curl http://localhost:4566/restapis/<API_ID>/dev/_user_request_/pedidos/001
 ```json
 {"cliente": "Roberto", "itens": ["mouse", "teclado"], "pedido_id": "001", "status": "RECEBIDO"}
 ```
+
+Utilizando Postman
+
 ![Postman - Consulta com sucesso](images/postman-200-sucesso.png)
 
 **Consulta via API (pedido inexistente — tratamento de erro):**
@@ -277,7 +280,10 @@ curl -i http://localhost:4566/restapis/<API_ID>/dev/_user_request_/pedidos/999
 HTTP/1.1 404 NOT FOUND
 {"erro": "Pedido não encontrado"}
 ```
-![Postman - Consulta com sucesso](images/postman-200-sucesso.png)
+
+Utilizando Postman
+
+![Postman - Consulta não encontrado](images/postman-400-nao-encontrado.png)
 
 ## 🐛 Troubleshooting — problema real enfrentado
 
