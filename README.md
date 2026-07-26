@@ -1,0 +1,1 @@
+# gft-automatizando-lambda-s3-aws-dio
